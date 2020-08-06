@@ -28,7 +28,7 @@ client.on("ready", () => {
 client.on("guildMemberAdd", async (member) => {
     var rulesChannel = member.guild.channels.cache.find(channel => channel.name === "rules")
 
-    let memberRole = message.guild.roles.cache.find(role => role.id == "740062376673673337")
+    let memberRole = member.guild.roles.cache.find(role => role.id == "740062376673673337")
     member.roles.add(memberRole)
 
     var embed = new Discord.MessageEmbed()
