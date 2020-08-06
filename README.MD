@@ -21,10 +21,10 @@ TOKEN = "TOKEN HERE"
 then do the following command
 ```
 // npm
-npm install dotenv
+$ npm install dotenv
 
 // yarn
-yarn add dotenv
+$ yarn add dotenv
 ```
 
 ## Commands
