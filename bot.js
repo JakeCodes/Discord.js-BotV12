@@ -57,9 +57,9 @@ client.on("guildMemberRemove", async (member) => {
         .setDescription(`${member} left ${member.guild.name}`)
         .setTimestamp()
         .setColor(15158332)
-    var joinChannel = member.guild.channels.cache.find(channel => channel.name === "goodbye")
+    var leaveChannel = member.guild.channels.cache.find(channel => channel.name === "goodbye")
     
-    joinChannel.send({embed: embed})
+    leaveChannel.send({embed: embed})
 })
 
 
