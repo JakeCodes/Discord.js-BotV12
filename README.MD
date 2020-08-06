@@ -28,9 +28,20 @@ yarn add dotenv
 ```
 
 ## Commands
+finally
+
 ```
 $ cd <project dir>
-$ npm install -g yarn
+```
+npm
+
+```
+$ npm install
+$ node bot.js
+```
+yarn
+
+```
 $ yarn install
 $ node bot.js
 ```
