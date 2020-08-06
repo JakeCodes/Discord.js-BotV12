@@ -23,7 +23,8 @@ module.exports = {
 
                 user.send({embed: embed})
 
-                member.kick("something").then(() => {
+                member.kick("something")
+                .then(() => {
                     message.reply(`Successfully kicked ${user.tag}`)
                 }).catch(err => {
                     message.reply("I was unable to kick the member")
