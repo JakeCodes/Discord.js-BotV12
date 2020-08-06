@@ -5,7 +5,7 @@ module.exports = {
     description: "kick command",
     execute(message, args) {
         let reason;
-        if (!message.member.hasPermission("BAN_MEMBERS")) return message.reply("You do not have BAN_MEMBERS permission")
+        if (!message.member.hasPermission("KICK_MEMBERS")) return message.reply("You do not have BAN_MEMBERS permission")
         if (!args[1]) reason = "No reason"
         else reason = args.join().replace(args[0], "").replace(",", " ")
 
