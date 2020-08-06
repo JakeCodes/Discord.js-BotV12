@@ -7,7 +7,6 @@ module.exports = {
 
             message.channel.bulkDelete(args[0])
         }
-        else
-            message.channel.send("You do not have permissions for that!!")
+
     }
 }
