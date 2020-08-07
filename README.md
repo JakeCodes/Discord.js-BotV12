@@ -2,7 +2,11 @@
 using discord.js
 
 ## Prerequisites
-> <a href="https://nodejs.org/en/">Node.js & Npm</a>
+> * <a href="https://nodejs.org/en/">Node.js & Npm</a>
+
+```
+$ npm i -g yarn
+```
 
 ## Starting
 in bot.js you will notice the following
@@ -20,19 +24,11 @@ TOKEN = "TOKEN HERE"
 
 then do the following command
 ```
-// npm
-$ npm install dotenv
-
 // yarn
 $ yarn add dotenv
 ```
 
 ## Commands
-Install Yarn
-
-```
-$ npm install -g yarn
-```
 Install all dependencies & start app
 
 ```
