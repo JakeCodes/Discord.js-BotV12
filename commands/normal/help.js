@@ -3,7 +3,7 @@ const Discord = require("discord.js")
 module.exports = {
     name: "help",
     description: "help command",
-    execute(message, args) {
+    run: (message, args) => {
         var embed = new Discord.MessageEmbed()
             .setTitle("Help")
             .setDescription("List of commands for me to follow")
