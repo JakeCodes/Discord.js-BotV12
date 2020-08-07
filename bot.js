@@ -29,7 +29,7 @@ for (const file of normalCMDFiles) {
 client.on("ready", () => {
     // set status and log when ready
     client.user.setStatus('available')
-    client.user.setActivity( "to !help", {
+    client.user.setActivity( "!help", {
         type: "LISTENING",
       });
     console.log("Bot is ready")
@@ -68,6 +68,7 @@ client.on("guildMemberRemove", async (member) => {
 
 client.on("message", async (message) => {
         if (!message.content.startsWith(prefix) || message.author.bot) return;
+
         const args = message.content.slice(prefix.length).split(/ +/)
         const command = args.shift().toLowerCase();
 
