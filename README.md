@@ -28,7 +28,7 @@ then do the following command
 $ yarn add dotenv
 ```
 
-## Commands
+## Installing & Running
 Install all dependencies & start app
 
 ```
