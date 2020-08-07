@@ -4,10 +4,6 @@ using discord.js
 ## Prerequisites
 > <a href="https://nodejs.org/en/">Node.js & Npm</a>
 
-> Yarn (Do the following command!)
-```
-$ npm i -g yarn
-```
 
 ## Add File
 in bot.js you will notice the following
@@ -27,6 +23,12 @@ TOKEN = "TOKEN HERE"
 Install all dependencies & start app
 
 ```
+// Npm
+$ npm install
+$ node bot.js
+
+
+// Yarn
 $ yarn install
 $ node bot.js
 ```
