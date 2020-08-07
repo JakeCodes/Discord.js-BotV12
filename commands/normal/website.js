@@ -1,4 +1,4 @@
-var website = "https://jakecodes.com/"
+const website = "https://jakecodes.com/"
 const Discord = require("discord.js")
 
 module.exports = {
