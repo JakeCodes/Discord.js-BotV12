@@ -9,7 +9,7 @@ using discord.js
 $ npm i -g yarn
 ```
 
-## Starting
+## Add File
 in bot.js you will notice the following
 
 ```
@@ -21,11 +21,6 @@ and add the following
 
 ```
 TOKEN = "TOKEN HERE"
-```
-
-then do the following command
-```
-$ yarn add dotenv
 ```
 
 ## Installing & Running
