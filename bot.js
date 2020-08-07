@@ -7,9 +7,12 @@ const prefix = "!"
 
 const fs = require('fs')
 client.commands = new Discord.Collection();
+
+// Admin and Normal files
 const adminCMDFiles = fs.readdirSync("./commands/admin").filter(file => file.endsWith('.js'))
 const normalCMDFiles = fs.readdirSync("./commands/normal").filter(file => file.endsWith('.js'))
 
+// Add admin and normals commands to client.commands
 for (const file of adminCMDFiles) {
     const adminCommand = require(`./commands/admin/${file}`);
 
@@ -38,7 +41,7 @@ client.on("guildMemberAdd", async (member) => {
     let memberRole = member.guild.roles.cache.find(role => role.id == "740062376673673337")
     member.roles.add(memberRole)
 
-    // send embed onJoin message
+    // send onJoin embed message
     var embed = new Discord.MessageEmbed()
         .setTitle("Member Joined")
         .setDescription(`${member} joined ${member.guild.name}. Please check out <#739580438921609216>`)
