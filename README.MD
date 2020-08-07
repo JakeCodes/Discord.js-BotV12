@@ -33,7 +33,7 @@ Install Yarn
 ```
 $ npm install -g yarn
 ```
-Install all dependacies & start app
+Install all dependencies & start app
 
 ```
 $ yarn install
