@@ -13,17 +13,17 @@ const adminCMDFiles = fs.readdirSync("./commands/admin")
 const normalCMDFiles = fs.readdirSync("./commands/normal")
 
 // Add admin and normals commands to client.commands
-for (const file of adminCMDFiles) {
+adminCMDFiles.forEach(() => {
     const adminCommand = require(`./commands/admin/${file}`);
 
     client.commands.set(adminCommand.name, adminCommand)
-}
+})
 
-for (const file of normalCMDFiles) {
+normalCMDFiles.forEach(() => {
     const normalCommand = require(`./commands/normal/${file}`);
 
     client.commands.set(normalCommand.name, normalCommand)
-}
+})
 
 
 client.on("ready", () => {
