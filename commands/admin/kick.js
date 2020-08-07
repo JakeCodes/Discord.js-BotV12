@@ -3,9 +3,9 @@ const Discord = require("discord.js")
 module.exports = {
     name: "kick",
     description: "kick command",
-    execute(message, args) {
+    run: (message, args) => {
         let reason;
-        if (!message.member.hasPermission("KICK_MEMBERS")) return message.reply("You do not have KICK_MEMBERS permission")
+        if (!message.member.hasPermission("KICK_MEMBERS")) return message.reply("You do not have permission for that!!")
         if (!args[1]) reason = "No reason"
         else reason = args.join().replace(args[0], "").replace(",", " ")
 

@@ -4,7 +4,7 @@ const Discord = require("discord.js")
 module.exports = {
     name: "website",
     description: "returns website link",
-    execute(message, args) {
+    run: (message, args) => {
         var embed = new Discord.MessageEmbed()
             .setTitle("Jake Codes")
             .setDescription(`${website}`)

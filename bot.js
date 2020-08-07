@@ -9,8 +9,8 @@ const fs = require('fs')
 client.commands = new Discord.Collection();
 
 // Admin and Normal files
-const adminCMDFiles = fs.readdirSync("./commands/admin").filter(file => file.endsWith('.js'))
-const normalCMDFiles = fs.readdirSync("./commands/normal").filter(file => file.endsWith('.js'))
+const adminCMDFiles = fs.readdirSync("./commands/admin")
+const normalCMDFiles = fs.readdirSync("./commands/normal")
 
 // Add admin and normals commands to client.commands
 for (const file of adminCMDFiles) {
@@ -75,29 +75,32 @@ client.on("message", async (message) => {
 
         // Normal commands
         if (command === "ping")
-            client.commands.get("ping").execute(message, args)
+            client.commands.get("ping").run(message, args)
 
         else if (command === "help")
-            client.commands.get("help").execute(message, args)
+            client.commands.get("help").run(message, args)
         
         else if (command === "rules")
-            client.commands.get("rules").execute(message, args)
+            client.commands.get("rules").run(message, args)
 
         else if (command === "website")
-            client.commands.get("website").execute(message, args)
+            client.commands.get("website").run(message, args)
 
         else if (command === "8ball")
-            client.commands.get("8ball").execute(message, args)
+            client.commands.get("8ball").run(message, args)
 
         // Admin Commands
         else if (command === "clear")
-            client.commands.get("clear").execute(message, args)
+            client.commands.get("clear").run(message, args)
 
         else if (command === "kick")
-            client.commands.get("kick").execute(message, args)
+            client.commands.get("kick").run(message, args)
             
         else if (command === "ban")
-            client.commands.get("ban").execute(message, args)
+            client.commands.get("ban").run(message, args)
+
+        else if (command === "unban")
+            client.commands.get("unban").run(message, args) 
 })
 
 // Login

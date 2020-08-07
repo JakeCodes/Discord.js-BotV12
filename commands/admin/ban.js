@@ -3,7 +3,7 @@ const Discord = require("discord.js")
 module.exports = {
     name: "ban",
     description: "ban command",
-    execute(message, args) {
+    run: async (message, args) => {
         let reason;
         if (!message.member.hasPermission("BAN_MEMBERS")) return message.reply("You do not have BAN_MEMBERS permission")
         if (!args[1]) reason = "No reason"
@@ -17,11 +17,11 @@ module.exports = {
             if (member) {
 
                 var embed = new Discord.MessageEmbed()
-                    .setTitle("Banned from Jake's Place")
+                    .setTitle(`Banned from ${message.guild.name}`)
                     .addField("Reason", reason)
                     .setColor(15158332)
 
-                user.send({embed: embed})
+                await member.send({embed: embed})
 
                 member.ban()
                 .then(() => {

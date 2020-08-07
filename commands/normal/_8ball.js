@@ -3,7 +3,7 @@ const Discord = require("discord.js")
 module.exports = {
     name: "8ball",
     description: "random yes or no",
-    execute(message, args) {
+    run: (message, args) => {
         if (!args[0]) return message.reply("Please define a question")
 
         const answers = ["It is certain.",
