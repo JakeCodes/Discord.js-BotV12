@@ -2,8 +2,9 @@
 using discord.js
 
 ## Prerequisites
-> * <a href="https://nodejs.org/en/">Node.js & Npm</a>
+> <a href="https://nodejs.org/en/">Node.js & Npm</a>
 
+> Yarn (Do the following command!)
 ```
 $ npm i -g yarn
 ```
