@@ -23,13 +23,7 @@ TOKEN = "TOKEN HERE"
 Install all dependencies & start app
 
 ```
-// Npm
 $ npm install
-$ node bot.js
-
-
-// Yarn
-$ yarn install
 $ node bot.js
 ```
 
