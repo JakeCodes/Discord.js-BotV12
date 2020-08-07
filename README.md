@@ -25,7 +25,6 @@ TOKEN = "TOKEN HERE"
 
 then do the following command
 ```
-// yarn
 $ yarn add dotenv
 ```
 
