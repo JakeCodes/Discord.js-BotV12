@@ -28,18 +28,12 @@ $ yarn add dotenv
 ```
 
 ## Commands
-finally
+Install Yarn
 
 ```
-$ cd <project dir>
+$ npm install -g yarn
 ```
-npm
-
-```
-$ npm install
-$ node bot.js
-```
-yarn
+Install all dependacies & start app
 
 ```
 $ yarn install
