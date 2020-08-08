@@ -9,7 +9,7 @@ module.exports = {
         if (!args[1]) reason = "No reason"
         else reason = args.join().replace(args[0], "").replace(",", " ")
 
-        const user =  message.mentions.users.first();
+        const user = message.mentions.users.first();
 
         if (user) {
             const member = message.guild.member(user)

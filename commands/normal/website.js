@@ -7,7 +7,7 @@ module.exports = {
     run: (message, args) => {
         var embed = new Discord.MessageEmbed()
             .setTitle("Jake Codes")
-            .setDescription(`${website}`)
+            .setDescription(website)
             .setColor(15158332)
 
         message.channel.send({embed: embed})
