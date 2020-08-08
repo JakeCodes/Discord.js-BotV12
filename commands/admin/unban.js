@@ -11,9 +11,9 @@ module.exports = {
 
         try {
             message.guild.fetchBans()
-            .then(bans => {
-                message.guild.members.unban(member)
-            })
+                .then(bans => {
+                    message.guild.members.unban(member)
+                })
             message.channel.send(`${member} has been unbanned`)
         }
         catch (e) {
