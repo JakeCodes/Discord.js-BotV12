@@ -51,8 +51,12 @@ module.exports = {
 
         var embed = new Discord.MessageEmbed()
             .setTitle("8Ball")
-            .addField('Question', `${args}`)
-            .addField(`Reply`, `${answers[random]}`)
+
+            .addFields(
+                {name: 'Question', value: `${args}`},
+                {name: 'Reply', value: `${answers[random]}`},
+            )
+
             .setColor(15158332)
 
         message.channel.send({embed: embed});

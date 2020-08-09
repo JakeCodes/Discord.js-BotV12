@@ -7,11 +7,12 @@ module.exports = {
         var embed = new Discord.MessageEmbed()
             .setTitle("Rules")
             .setDescription("Please Follow")
-            
+
             .addFields(
                 {name: '#1', value: `Don't Swear!`},
                 {name: '#2', value: `Don't Bully!`},
-                {name: '#3', value: `Be a good person`})
+                {name: '#3', value: `Be a good person`}
+            )
 
             .setColor(15158332)
 
