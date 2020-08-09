@@ -9,8 +9,8 @@ const fs = require('fs')
 client.commands = new Discord.Collection();
 
 // Admin and Normal files
-const adminCMDFiles = fs.readdirSync("./commands/admin")
-const normalCMDFiles = fs.readdirSync("./commands/normal")
+const adminCMDFiles = fs.readdirSync("./commands/admin").filter(file => file.endsWith('.js'));
+const normalCMDFiles = fs.readdirSync("./commands/normal").filter(file => file.endsWith('.js'));
 
 // Add admin and normals commands to client.commands
 adminCMDFiles.forEach(file => {
@@ -28,7 +28,6 @@ normalCMDFiles.forEach(file => {
 
 client.on("ready", () => {
     // set status and log when ready
-    client.user.setStatus('available')
     client.user.setActivity( "!help", {
         type: "LISTENING",
       });

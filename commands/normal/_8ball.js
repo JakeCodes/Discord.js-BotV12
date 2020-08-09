@@ -56,7 +56,7 @@ module.exports = {
                 {name: 'Question', value: `${args}`},
                 {name: 'Reply',    value: `${answers[random]}`},
             )
-
+            
             .setColor(15158332)
 
         message.channel.send({embed: embed});
