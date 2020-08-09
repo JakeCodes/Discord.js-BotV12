@@ -20,7 +20,6 @@ module.exports = {
                 {name: 'Play (YT Link)',   value: `Plays YT Link Audio`}
             )
 
-
             .setColor(15158332)
 
         message.channel.send({embed: embed});
