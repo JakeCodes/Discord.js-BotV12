@@ -8,15 +8,18 @@ module.exports = {
             .setTitle("Help")
             .setDescription("List of commands for me to follow")
 
-            .addField('Website (No Arg)', `Returns my website`)
-            .addField(`8ball (Question)`, `Returns yes or no statement`)
-            .addField(`Ping (No Arg)`, `Returns Pong`)
-            .addField(`Rules (No Arg)`, `Returns List of rules`)
-            .addField(`Join (No Arg)`, `Joins VC`)
-            .addField(`Leave (No Arg)`, `Leaves VC`)
-            .addField(`Pause (No Arg)`, `Pauses Video`)
-            .addField(`Resume (No Arg)`, `Resumes Video`)
-            .addField(`Play (YT Link)`, `Plays YT Link Audio`)
+            .addFields(
+                    {name: 'Website (No Arg)', value: `Returns My Website`},
+                    {name: '8ball (Question)', value: `Returns Yes, No, Maybe`},
+                    {name: 'Ping (No Arg)', value: `Returns Pong`},
+                    {name: 'Rules (No Arg)', value: `Returns List of Rules`},
+                    {name: 'Join (No Arg)', value: `Joins VC`},
+                    {name: 'Leave (No Arg)', value: `Leaves VC`},
+                    {name: 'Pause (No Arg)', value: `Pauses Video`},
+                    {name: 'Resume (No Arg)', value: `Resumes Video`},
+                    {name: 'Play (YT Link)', value: `Plays YT Link Audio`}
+                )
+
 
             .setColor(15158332)
 
