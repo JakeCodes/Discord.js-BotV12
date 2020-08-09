@@ -1,7 +1,6 @@
 require('dotenv').config();
 const Discord = require("discord.js")
 const client = new Discord.Client()
-const token = process.env.TOKEN
 
 const fs = require('fs')
 client.commands = new Discord.Collection();
@@ -32,4 +31,4 @@ eventFiles.forEach(file => {
 })
 
 // Login
-client.login(token)
+client.login(process.env.TOKEN)
