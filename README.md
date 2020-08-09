@@ -1,4 +1,6 @@
-# Jake's Discord Bot
+<div style="text-align: center">
+ <h1>Jake's Discord Bot</h1>
+</div>
 using discord.js
 
 ## Prerequisites
