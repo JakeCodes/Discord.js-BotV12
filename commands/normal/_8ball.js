@@ -54,7 +54,7 @@ module.exports = {
 
             .addFields(
                 {name: 'Question', value: `${args}`},
-                {name: 'Reply', value: `${answers[random]}`},
+                {name: 'Reply',    value: `${answers[random]}`},
             )
 
             .setColor(15158332)
