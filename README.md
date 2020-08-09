@@ -24,6 +24,6 @@ Install all dependencies & start app
 
 ```
 $ npm install
-$ node bot.js
+$ npm start
 ```
 
