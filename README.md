@@ -1,4 +1,4 @@
-## Jake's Discord.js Bot
+# Jake's Discord.js Bot
 using discord.js
 
 ## Prerequisites
