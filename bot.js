@@ -72,7 +72,6 @@ client.on("message", async (message) => {
         const args = message.content.slice(prefix.length).split(/ +/)
         const command = args.shift().toLowerCase();
 
-        // load commands from other files
 
         // Normal commands
         if (command === "ping")
@@ -89,6 +88,7 @@ client.on("message", async (message) => {
 
         else if (command === "8ball")
             client.commands.get("8ball").run(message, args)
+
 
         // Admin Commands
         else if (command === "clear")
