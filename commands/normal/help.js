@@ -19,8 +19,7 @@ module.exports = {
 
         else if (args[0] === "all") {
             var embed = new Discord.MessageEmbed()
-            .setTitle("Help")
-            .setDescription("List of commands for me to follow")
+            .setTitle("Help All")
 
             .addFields(
                 {name: 'Website (No Arg)', value: `Returns My Website`},
@@ -38,7 +37,6 @@ module.exports = {
         else if (args[0] === "music") {
             var embed = new Discord.MessageEmbed()
             .setTitle("Help Music")
-            .setDescription("List of commands for me to follow")
 
             .addFields(
                 {name: 'Join (No Arg)',    value: `Joins VC`},
@@ -51,8 +49,7 @@ module.exports = {
 
         else if (args[0] === "misc") {
             var embed = new Discord.MessageEmbed()
-            .setTitle("Help")
-            .setDescription("List of commands for me to follow")
+            .setTitle("Help Misc")
 
             .addFields(
                 {name: 'Rules (No Arg)', value: `Returns List of Rules`},
