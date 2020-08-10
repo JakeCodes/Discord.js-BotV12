@@ -4,6 +4,7 @@ module.exports = {
     name: "help",
     description: "help command",
     run: (message, args) => {
+        args = args.toLowerCase()
 
         if (!args[0]) {
             var embed = new Discord.MessageEmbed()
