@@ -15,8 +15,6 @@ module.exports = {
                     {name: 'Help Music', value: `Returns Music Commands`},
                     {name: 'Help Misc',    value: `Returns Misc Commnands`},
                 )
-
-                .setColor(15158332)
         }
 
         else if (args[0] === "all") {
@@ -62,6 +60,8 @@ module.exports = {
                 {name: 'Ping (No Arg)', value: `Returns Pong`}
             )
         }
+
+        embed.setColor(15158332)
 
         message.channel.send({embed: embed});
     }
