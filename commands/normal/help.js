@@ -11,9 +11,9 @@ module.exports = {
                 .setDescription("List of commands for me to follow")
 
                 .addFields(
-                    {name: 'Help All', value: `Returns All Commands`},
-                    {name: 'Help Music', value: `Returns Music Commands`},
-                    {name: 'Help Misc',    value: `Returns Misc Commnands`},
+                    {name: 'Help All', value: `All Commands`,       inline: true },
+                    {name: 'Help Music', value: `Music Commands`,   inline: true },
+                    {name: 'Help Misc',    value: `Misc Commnands`, inline: true },
                 )
         }
 
