@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 module.exports = (client, message) => {
     // Send on remove message
     var embed = new Discord.MessageEmbed()

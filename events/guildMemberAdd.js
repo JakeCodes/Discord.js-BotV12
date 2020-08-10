@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 module.exports = (client, message) => {
     // Add Role when user joins
     let memberRole = member.guild.roles.cache.find(role => role.id == "740062376673673337")
