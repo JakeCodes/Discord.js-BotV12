@@ -1,4 +1,5 @@
 require('dotenv').config();
+prefix = process.env.PREFIX
 
 module.exports = (client, message) => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;

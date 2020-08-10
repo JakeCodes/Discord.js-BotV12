@@ -1,5 +1,4 @@
 require('dotenv').config();
-prefix = process.env.PREFIX
 
 module.exports = (client, message) => {
     // Add Role when user joins
