@@ -4,7 +4,7 @@ prefix = process.env.PREFIX
 module.exports = (client, message) => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-        const args = message.content.slice(prefix.length).split(/ +/)
+        const args = message.content.slice(prefix.length).split(/ +/).toLowerCase()
         const command = args.shift().toLowerCase();
 
 
