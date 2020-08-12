@@ -13,7 +13,7 @@ module.exports = {
                 .addFields(
                     {name: 'Help All', value: `All Commands`,       inline: true },
                     {name: 'Help Music', value: `Music Commands`,   inline: true },
-                    {name: 'Help Misc',    value: `Misc Commnands`, inline: true },
+                    {name: 'Help Misc',    value: `Misc Commands`,  inline: true },
                 )
         }
 
