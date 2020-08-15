@@ -8,10 +8,10 @@ const fs = require('fs')
 client.commands = new Discord.Collection();
 client.events = new Discord.Collection();
 
-const adminCMDFiles = fs.readdirSync("./commands/admin").filter(file => file.endsWith('.js'));
+const adminCMDFiles = fs.readdirSync("./commands/mod").filter(file => file.endsWith('.js'));
 
 adminCMDFiles.forEach(file => {
-    const adminCommand = require(`./commands/admin/${file}`);
+    const adminCommand = require(`./commands/mod/${file}`);
 
     client.commands.set(adminCommand.name, adminCommand)
 })
