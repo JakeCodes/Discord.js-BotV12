@@ -1,4 +1,4 @@
-const Discord = require("discord.js")
+const { MessageEmbed } = require("discord.js")
 
 module.exports = {
     name: "8ball",
@@ -49,7 +49,7 @@ module.exports = {
 
         const random = Math.floor(Math.random() * answers.length);
 
-        var embed = new Discord.MessageEmbed()
+        var embed = new MessageEmbed()
             .setTitle("8Ball")
             .setDescription(`${answers[random]}`)      
             .setColor(15158332)

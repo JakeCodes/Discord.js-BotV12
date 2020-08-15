@@ -1,12 +1,14 @@
 require('dotenv').config();
-const Discord = require("discord.js")
-const client = new Discord.Client()
+const { Collection, Client } = require("discord.js")
 
+// From Discord
+const client = new Client()
+client.commands = new Collection();
+client.events = new Collection();
+
+// Other
 const token = process.env.TOKEN
-
 const fs = require('fs')
-client.commands = new Discord.Collection();
-client.events = new Discord.Collection();
 
 const adminCMDFiles = fs.readdirSync("./commands/mod").filter(file => file.endsWith('.js'));
 

@@ -1,4 +1,4 @@
-const Discord = require("discord.js")
+const { MessageEmbed } = require("discord.js")
 
 module.exports = {
     name: "help",
@@ -6,7 +6,7 @@ module.exports = {
     run: (message, args) => {
 
         if (!args[0]) {
-            var embed = new Discord.MessageEmbed()
+            var embed = new MessageEmbed()
                 .setTitle("Help")
                 .setDescription("List of commands for me to follow")
 
@@ -18,7 +18,7 @@ module.exports = {
         }
 
         else if (args[0] === "all") {
-            var embed = new Discord.MessageEmbed()
+            var embed = new MessageEmbed()
             .setTitle("All Commands")
 
             .addFields(
@@ -34,7 +34,7 @@ module.exports = {
         }
 
         else if (args[0] === "music") {
-            var embed = new Discord.MessageEmbed()
+            var embed = new MessageEmbed()
             .setTitle("Music Commands")
 
             .addFields(
@@ -47,7 +47,7 @@ module.exports = {
         }
 
         else if (args[0] === "misc") {
-            var embed = new Discord.MessageEmbed()
+            var embed = new MessageEmbed()
             .setTitle("Misc Commands")
 
             .addFields(

@@ -10,10 +10,7 @@ module.exports = (client, message) => {
 
 
         // Normal commands
-        if (command === "ping")
-            client.commands.get("ping").run(message, args)
-
-        else if (command === "help")
+        if (command === "help")
             client.commands.get("help").run(message, args)
         
         else if (command === "rules")

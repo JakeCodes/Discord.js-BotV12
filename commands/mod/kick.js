@@ -1,4 +1,4 @@
-const Discord = require("discord.js")
+const { MessageEmbed } = require("discord.js")
 
 module.exports = {
     name: "kick",
@@ -16,7 +16,7 @@ module.exports = {
 
             if (member) {
 
-                var embed = new Discord.MessageEmbed()
+                var embed = new MessageEmbed()
                     .setTitle("Kicked from Jake's Place")
                     .addField("Reason", reason)
                     .setColor(15158332)

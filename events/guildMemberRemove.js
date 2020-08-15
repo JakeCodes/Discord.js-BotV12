@@ -1,8 +1,8 @@
-const Discord = require("discord.js")
+const { MessageEmbed } = require("discord.js")
 
 module.exports = (client, member) => {
     // Send on remove message
-    var embed = new Discord.MessageEmbed()
+    var embed = new MessageEmbed()
         .setTitle("Member Left")
         .setDescription(`${member} left ${member.guild.name}`)
         .setTimestamp()
