@@ -4,7 +4,7 @@ module.exports = {
     name: "rules",
     description: "returns embeded list of rules",
     run: (message, args) => {
-        var embed = new Discord.MessageEmbed()
+        var embed = new MessageEmbed()
             .setTitle("Rules")
             .setDescription("Please Follow")
 
