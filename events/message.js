@@ -25,6 +25,9 @@ module.exports = (client, message) => {
         else if (command === "8ball")
             client.commands.get("8ball").run(message, args)
 
+        else if (command === "steam")
+            client.commands.get("steam").run(message, args) 
+
 
         // Admin Commands
         else if (command === "clear")
