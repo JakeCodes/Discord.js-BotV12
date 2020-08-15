@@ -1,4 +1,4 @@
-prefix = process.env.PREFIX
+prefix = process.env.PREFIX.toLowerCase();
 
 module.exports = (client, message) => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
