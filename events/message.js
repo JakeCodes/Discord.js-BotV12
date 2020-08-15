@@ -25,7 +25,7 @@ module.exports = (client, message) => {
         else if (command === "8ball")
             client.commands.get("8ball").run(message, args)
 
-        else if (command === "socials")
+        else if (command === "socials" || command === "social")
             client.commands.get("socials").run(message, args) 
 
 
