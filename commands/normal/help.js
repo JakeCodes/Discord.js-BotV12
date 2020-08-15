@@ -22,10 +22,8 @@ module.exports = {
             .setTitle("All Commands")
 
             .addFields(
-                {name: 'Website (No Arg)', value: `Returns My Website`},
-                {name: 'Steam (No Arg)',   value: `Returns Steam Profile`},
+                {name: 'Socials (No Arg)', value: `Returns My Socials`},
                 {name: '8ball (Question)', value: `Returns Yes, No, Maybe`},
-                {name: 'Ping (No Arg)',    value: `Returns Pong`},
                 {name: 'Rules (No Arg)',   value: `Returns List of Rules`},
                 {name: 'Join (No Arg)',    value: `Joins VC`},
                 {name: 'Leave (No Arg)',   value: `Leaves VC`},
@@ -54,9 +52,7 @@ module.exports = {
 
             .addFields(
                 {name: 'Rules (No Arg)', value: `Returns List of Rules`},
-                {name: 'Website (Question)', value: `Returns My Website`},
-                {name: 'Steam (No Arg)',   value: `Returns Steam Profile`},
-                {name: 'Ping (No Arg)', value: `Returns Pong`}
+                {name: 'Socials (No Arg)', value: `Returns My Socials`},
             )
         }
 

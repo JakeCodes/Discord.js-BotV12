@@ -1,4 +1,4 @@
-const Discord = require("discord.js")
+const { MessageEmbed } = require("discord.js")
 
 module.exports = (client, member) => {
     // Add role on join
@@ -6,7 +6,7 @@ module.exports = (client, member) => {
     member.roles.add(memberRole);
 
     // send onJoin embed message
-    var embed = new Discord.MessageEmbed()
+    var embed = new MessageEmbed()
         .setTitle("Member Joined")
         .setDescription(`${member} joined ${member.guild.name}. Please check out <#739580438921609216>`)
         .setTimestamp()
