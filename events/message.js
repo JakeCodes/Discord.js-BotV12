@@ -1,9 +1,8 @@
 prefix = process.env.PREFIX.toLowerCase();
 
 module.exports = (client, message) => {
+    message.content = message.content.toLowerCase()
     if (!message.content.startsWith(prefix) || message.author.bot) return;
-
-        message.content = message.content.toLowerCase()
 
         const args = message.content.slice(prefix.length).split(/ +/)
         const command = args.shift().toLowerCase();
