@@ -9,7 +9,7 @@ module.exports = {
             .setDescription("All of my socials")
 
             .addFields(
-                {name: 'Website', value: `https://jakecodes.com`, inline: false },
+                {name: 'Website', value: `http://jakecodes.com`, inline: false },
                 {name: 'Steam', value: `https://steamcommunity.com/id/jake-codes`, inline: false },
                 {name: 'Stackoverflow', value: `https://stackoverflow.com/users/13073672/epix?tab=profile`, inline: false },
                 {name: 'Github', value: `https://github.com/JakeCodes`, inline: false },
