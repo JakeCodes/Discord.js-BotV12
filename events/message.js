@@ -1,4 +1,4 @@
-prefix = process.env.PREFIX.toLowerCase();
+const prefix = process.env.PREFIX.toLowerCase();
 
 module.exports = (client, message) => {
     message.content = message.content.toLowerCase()
