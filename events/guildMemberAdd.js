@@ -1,8 +1,6 @@
-module.exports = (client, message) => {
-    // Add Role when user joins
-    let memberRole = member.guild.roles.cache.find(role => role.id == "740062376673673337")
-    member.roles.add(memberRole)
+const Discord = require("discord.js")
 
+module.exports = (client, member) => {
     // send onJoin embed message
     var embed = new Discord.MessageEmbed()
         .setTitle("Member Joined")

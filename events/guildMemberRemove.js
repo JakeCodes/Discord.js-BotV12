@@ -1,4 +1,6 @@
-module.exports = (client, message) => {
+const Discord = require("discord.js")
+
+module.exports = (client, member) => {
     // Send on remove message
     var embed = new Discord.MessageEmbed()
         .setTitle("Member Left")
