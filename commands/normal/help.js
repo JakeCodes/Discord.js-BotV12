@@ -23,6 +23,7 @@ module.exports = {
 
             .addFields(
                 {name: 'Website (No Arg)', value: `Returns My Website`},
+                {name: 'Steam (No Arg)',   value: `Returns Steam Profile`},
                 {name: '8ball (Question)', value: `Returns Yes, No, Maybe`},
                 {name: 'Ping (No Arg)',    value: `Returns Pong`},
                 {name: 'Rules (No Arg)',   value: `Returns List of Rules`},
@@ -54,6 +55,7 @@ module.exports = {
             .addFields(
                 {name: 'Rules (No Arg)', value: `Returns List of Rules`},
                 {name: 'Website (Question)', value: `Returns My Website`},
+                {name: 'Steam (No Arg)',   value: `Returns Steam Profile`},
                 {name: 'Ping (No Arg)', value: `Returns Pong`}
             )
         }
