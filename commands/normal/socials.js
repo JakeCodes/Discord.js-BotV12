@@ -5,9 +5,6 @@ module.exports = {
     description: "returns socials",
     run: (message, args) => {
         var embed = new MessageEmbed()
-            .setTitle("Socials")
-            .setDescription("All of my socials")
-
             .addFields(
                 {name: 'Website', value: `http://jakecodes.com`, inline: false },
                 {name: 'Steam', value: `https://steamcommunity.com/id/jake-codes`, inline: false },
