@@ -6,6 +6,7 @@ const client = new Client()
 client.commands = new Collection();
 client.events = new Collection();
 
+
 // Other
 const token = process.env.TOKEN
 const fs = require('fs')

@@ -24,6 +24,9 @@ module.exports = (client, message) => {
         else if (command === "socials" || command === "social")
             client.commands.get("socials").run(message, args) 
 
+        else if (command === "hardware" || command === "social")
+            client.commands.get("hardware").run(message, args) 
+
 
         // Admin Commands
         else if (command === "clear")
