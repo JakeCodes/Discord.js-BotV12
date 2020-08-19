@@ -11,9 +11,9 @@ module.exports = {
                 .setDescription("List of commands for me to follow")
 
                 .addFields(
-                    {name: 'Help All', value: `All Commands`,       inline: true },
-                    {name: 'Help Music', value: `Music Commands`,   inline: true },
-                    {name: 'Help Misc',    value: `Misc Commands`,  inline: true },
+                    {name: '`Jake Help All`', value: `All Commands`,       inline: true },
+                    {name: '`Jake Help Music`', value: `Music Commands`,   inline: true },
+                    {name: '`Jake Help Misc`',    value: `Misc Commands`,  inline: true },
                 )
         }
 
@@ -22,15 +22,15 @@ module.exports = {
             .setTitle("All Commands")
 
             .addFields(
-                {name: 'Socials (No Arg)',  value: `Returns My Socials`},
-                {name: 'Hardware (No Arg)', value: `Returns My Hardware`},
-                {name: '8ball (Question)',  value: `Returns Yes, No, Maybe`},
-                {name: 'Rules (No Arg)',    value: `Returns List of Rules`},
-                {name: 'Join (No Arg)',     value: `Joins VC`},
-                {name: 'Leave (No Arg)',    value: `Leaves VC`},
-                {name: 'Pause (No Arg)',    value: `Pauses Video`},
-                {name: 'Resume (No Arg)',   value: `Resumes Video`},
-                {name: 'Play (YT Link)',    value: `Plays YT Link Audio`}
+                {name: '`Jake Socials` (No Arg)',  value: `Returns My Socials`},
+                {name: '`Jake Hardware` (No Arg)', value: `Returns My Hardware`},
+                {name: '`Jake 8ball` (Question)',  value: `Returns Yes, No, Maybe`},
+                {name: '`Jake Rules` (No Arg)',    value: `Returns List of Rules`},
+                {name: '`Jake Join` (No Arg)',     value: `Joins VC`},
+                {name: '`Jake Leave` (No Arg)',    value: `Leaves VC`},
+                {name: '`Jake Pause` (No Arg)',    value: `Pauses Video`},
+                {name: '`Jake Resume` (No Arg)',   value: `Resumes Video`},
+                {name: '`Jake Play` (YT Link)',    value: `Plays YT Link Audio`}
             )
         }
 
@@ -39,11 +39,11 @@ module.exports = {
             .setTitle("Music Commands")
 
             .addFields(
-                {name: 'Join (No Arg)',    value: `Joins VC`},
-                {name: 'Leave (No Arg)',   value: `Leaves VC`},
-                {name: 'Pause (No Arg)',   value: `Pauses Video`},
-                {name: 'Resume (No Arg)',  value: `Resumes Video`},
-                {name: 'Play (YT Link)',   value: `Plays YT Link Audio`}
+                {name: '`Jake Join` (No Arg)',    value: `Joins VC`},
+                {name: '`Jake Leave` (No Arg)',   value: `Leaves VC`},
+                {name: '`Jake Pause` (No Arg)',   value: `Pauses Video`},
+                {name: '`Jake Resume` (No Arg)',  value: `Resumes Video`},
+                {name: '`Jake Play` (YT Link)',   value: `Plays YT Link Audio`}
             )
         }
 
@@ -52,10 +52,10 @@ module.exports = {
             .setTitle("Misc Commands")
 
             .addFields(
-                {name: '8ball (Question)', value: `Returns Yes, No, Maybe`},
-                {name: 'Rules (No Arg)', value: `Returns List of Rules`},
-                {name: 'Socials (No Arg)', value: `Returns My Socials`},
-                {name: 'Hardware (No Arg)', value: `Returns My Hardware`},
+                {name: '`Jake 8ball` (Question)', value: `Returns Yes, No, Maybe`},
+                {name: '`Jake Rules` (No Arg)', value: `Returns List of Rules`},
+                {name: '`Jake Socials` (No Arg)', value: `Returns My Socials`},
+                {name: '`Jake Hardware` (No Arg)', value: `Returns My Hardware`},
             )
         }
 
