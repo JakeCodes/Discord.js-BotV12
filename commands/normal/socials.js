@@ -1,6 +1,6 @@
 const { MessageEmbed } = require("discord.js")
 
-const website = "https://jakecodes.com"
+const website = "https://jakecodes.com/contact"
 const steam = "https://steamcommunity.com/id/jake-codes"
 const stackoverflow = "https://stackoverflow.com/users/13073672/epix?tab=profile"
 const github = "https://github.com/JakeCodes"
