@@ -1,15 +1,21 @@
 const { MessageEmbed } = require("discord.js")
 
+const website = "https://jakecodes.com"
+const steam = "https://steamcommunity.com/id/jake-codes"
+const stackoverflow = "https://stackoverflow.com/users/13073672/epix?tab=profile"
+const github = "https://github.com/JakeCodes"
+
+
 module.exports = {
     name: "socials",
     description: "returns socials",
     run: (message, args) => {
         var embed = new MessageEmbed()
             .addFields(
-                {name: 'Website', value: `http://jakecodes.com`, inline: false },
-                {name: 'Steam', value: `https://steamcommunity.com/id/jake-codes`, inline: false },
-                {name: 'Stackoverflow', value: `https://stackoverflow.com/users/13073672/epix?tab=profile`, inline: false },
-                {name: 'Github', value: `https://github.com/JakeCodes`, inline: false },
+                {name: 'Website', value: `[Here](${website})`},
+                {name: 'Steam', value: `[Here](${steam})`},
+                {name: 'Stackoverflow', value: `[Here](${stackoverflow})`},
+                {name: 'Github', value: `[Here](${github})`},
             )
 
             .setColor(15158332)
