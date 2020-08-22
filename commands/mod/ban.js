@@ -1,11 +1,12 @@
 const { MessageEmbed } = require("discord.js")
+const emotes = require ("../../config/emojis.json");
 
 module.exports = {
     name: "ban",
     description: "ban command",
     run: async (message, args) => {
         let reason;
-        if (!message.member.hasPermission("BAN_MEMBERS")) return message.reply("You do not have BAN_MEMBERS permission")
+        if (!message.member.hasPermission("BAN_MEMBERS")) return message.reply(`You do not have BAN_MEMBERS permission ${emotes.error}`)
         if (!args[1]) reason = "No reason"
         else reason = args.join().replace(",", " ")
 
@@ -25,7 +26,7 @@ module.exports = {
 
                 member.ban()
                     .then(() => {
-                        message.reply(`Successfully banned ${user.tag}`)
+                        message.reply(`Successfully banned ${user.tag} ${emotes.success}`)
                     }).catch(err => {
                         message.reply("I was unable to ban the member")
                     })
