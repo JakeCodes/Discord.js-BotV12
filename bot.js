@@ -6,9 +6,7 @@ const { Player } = require("discord-player")
 const client = new Client()
 client.commands = new Collection();
 client.events = new Collection();
-
-const player = new Player(client)
-client.player = player;
+client.player = new Player(client);
 
 registerEvents(client, '../events');
 registerCommands(client, '../commands');
