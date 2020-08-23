@@ -60,6 +60,8 @@ module.exports = {
                 )
         }
 
+        else return message.reply("Not defined")
+
         embed.setColor(15158332)
 
         message.channel.send({embed: embed});
