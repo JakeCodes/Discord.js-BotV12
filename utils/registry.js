@@ -27,7 +27,7 @@ async function registerCommands(client, dir) {
                             let { aliases } = cmdModule;
                             client.commands.set(cmdName, cmdModule);
                             if(aliases.length !== 0)
-                                aliases.forEach(alias => client.commands.set(alias, cmdModule.run));
+                                aliases.forEach(alias => client.commands.set(alias, cmdModule));
                             commandStatus.push(
                                 [`${c.cyan(`${cmdName}`)}`, `${c.bgGreenBright('Success')}`, `${cmdModule.description}`]
                             )
