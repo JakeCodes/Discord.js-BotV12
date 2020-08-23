@@ -66,7 +66,6 @@ module.exports = {
                 .setTitle("Misc Commands")
 
                 .addFields(
-                    {name: '`Jake 8ball` (Question)', value: `Returns Yes, No, Maybe`},
                     {name: '`Jake Rules` (No Arg)', value: `Returns List of Rules`},
                     {name: '`Jake Socials` (No Arg)', value: `Returns My Socials`},
                     {name: '`Jake Hardware` (No Arg)', value: `Returns My Hardware`},
