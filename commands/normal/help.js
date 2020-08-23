@@ -11,10 +11,10 @@ module.exports = {
                 .setDescription("List of commands for me to follow")
 
                 .addFields(
-                    {name: '`Jake Help All`', value: `All Commands`,       inline: true },
-                    {name: '`Jake Help Music`', value: `Music Commands`,   inline: true },
-                    {name: '`Jake Help Games`', value: `Game Commands`,   inline: true },
-                    {name: '`Jake Help Misc`',    value: `Misc Commands`,  inline: true },
+                    {name: '`Jake Help All`', value: `All Commands`},
+                    {name: '`Jake Help Music`', value: `Music Commands`},
+                    {name: '`Jake Help Games`', value: `Game Commands`},
+                    {name: '`Jake Help Misc`',    value: `Misc Commands`},
                 )
         }
 
