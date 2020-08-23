@@ -22,7 +22,7 @@ module.exports = {
                     .addField("Reason", reason)
                     .setColor(15158332)
 
-                user.send({embed: embed})
+                user.send(embed)
 
                 member.kick()
                     .then(() => {

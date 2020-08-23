@@ -23,7 +23,7 @@ module.exports = {
                     .addField("Reason", reason)
                     .setColor(15158332)
 
-                await member.send({embed: embed})
+                await member.send(embed)
 
                 member.ban()
                     .then(() => {

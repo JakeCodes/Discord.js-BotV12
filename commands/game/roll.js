@@ -7,9 +7,9 @@ module.exports = {
     run: (message, args) => {
         var embed = new MessageEmbed()
             .setTitle("Dice Roll")
-            .setDescription(`${Math.floor(Math.random() * 6) + 1}`)
+            .setDescription(Math.floor(Math.random() * 6) + 1)
             .setColor(15158332)
 
-        message.channel.send({embed: embed})
+        message.channel.send(embed)
     }
 }
