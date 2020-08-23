@@ -10,8 +10,6 @@ client.events = new Collection();
 const player = new Player(client)
 client.player = player;
 
-const fs = require('fs')
-
 registerEvents(client, '../events');
 registerCommands(client, '../commands');
 
