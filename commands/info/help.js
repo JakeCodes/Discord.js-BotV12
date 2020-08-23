@@ -51,12 +51,13 @@ module.exports = {
 
         else if (args[0] === "info") {
             var embed = new MessageEmbed()
-                .setTitle("Misc Commands")
+                .setTitle("Info Commands")
 
                 .addFields(
                     {name: '`Jake Rules`', value: `Returns List of Rules`},
                     {name: '`Jake Socials`', value: `Returns My Socials`},
                     {name: '`Jake Hardware`', value: `Returns My Hardware`},
+                    {name: '`Jake Ping`', value: `Returns the bots ping`},
                 )
         }
 
