@@ -13,8 +13,8 @@ module.exports = {
                 .addFields(
                     {name: '`Jake Help All`', value: `All Commands`,       inline: true },
                     {name: '`Jake Help Music`', value: `Music Commands`,   inline: true },
-                    {name: '`Jake Help Games`', value: `Game Commands`,   inline: false },
-                    {name: '`Jake Help Misc`',    value: `Misc Commands`,  inline: false },
+                    {name: '`Jake Help Games`', value: `Game Commands`,   inline: true },
+                    {name: '`Jake Help Misc`',    value: `Misc Commands`,  inline: true },
                 )
         }
 
