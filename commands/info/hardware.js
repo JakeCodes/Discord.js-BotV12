@@ -15,7 +15,7 @@ module.exports = {
     name: "hardware",
     description: "returns hardware",
     aliases: [],
-    run: async (message, args) => {
+    run: (message, args) => {
         var embed = new MessageEmbed()
             .addFields(
                 {name: 'CPU', value: `[Intel Core i5 7600K @ 3.80GHz](${cpu})`},
