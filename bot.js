@@ -16,6 +16,7 @@ client.player = player;
 const token = process.env.TOKEN
 const fs = require('fs')
 
+// Register Events & Commands
 registerEvents(client, '../events');
 registerCommands(client, '../commands');
 
