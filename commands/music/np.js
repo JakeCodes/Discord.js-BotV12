@@ -4,7 +4,7 @@ const Discord = require("discord.js")
 module.exports = {
     name: "now playing",
     description: "returns song that is currently playing!",
-    aliases: ["now playing"],
+    aliases: ["now-playing"],
     run: async (client, message, args) => {
 
         //If the member is not in a voice channel
