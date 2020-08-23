@@ -1,6 +1,9 @@
 const { MessageEmbed } = require("discord.js")
+const { update_membercount } = require("../../utils/update_membercount")
 
 module.exports = (client, member) => {
+
+    update_membercount(client)
     // Send on remove message
     var embed = new MessageEmbed()
         .setTitle("Member Left")
