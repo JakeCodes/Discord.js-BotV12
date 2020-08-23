@@ -3,6 +3,7 @@ const { MessageEmbed } = require("discord.js")
 module.exports = {
     name: "rules",
     description: "returns embeded list of rules",
+    aliases: [],
     run: (message, args) => {
         var embed = new MessageEmbed()
             .setTitle("Rules")

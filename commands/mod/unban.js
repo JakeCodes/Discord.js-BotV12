@@ -1,6 +1,7 @@
 module.exports = {
     name: "unban",
     description: "unban command",
+    aliases: [],
     run: (message, args) => {
         if (!message.member.hasPermission("ADMINISTRATOR")) return message.reply("You do not have permission for that!!")
         const member = args[0]

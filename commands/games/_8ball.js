@@ -1,9 +1,10 @@
 const { MessageEmbed } = require("discord.js")
-const emotes = require ("../../config/emojis.json");
+const emotes = require ("../../utils/emojis.json");
 
 module.exports = {
     name: "8ball",
     description: "random yes or no",
+    aliases: [],
     run: (message, args) => {
         if (!args[0]) return message.reply(`Please define a question ${emotes.error}`)
 

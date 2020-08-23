@@ -3,6 +3,7 @@ const { MessageEmbed } = require("discord.js")
 module.exports = {
     name: "kick",
     description: "kick command",
+    aliases: [],
     run: (message, args) => {
         let reason;
         if (!message.member.hasPermission("KICK_MEMBERS")) return message.reply("You do not have permission for that!!")
@@ -37,5 +38,5 @@ module.exports = {
         else {
             message.reply("You need to specify a person!")
         }
-    }
+    },
 }

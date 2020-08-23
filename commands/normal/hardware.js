@@ -14,7 +14,8 @@ const keyboard = "https://www.amazon.com/Logitech-Spectrum-Mechanical-Keyboard-9
 module.exports = {
     name: "hardware",
     description: "returns hardware",
-    run: (message, args) => {
+    aliases: [],
+    run: async (message, args) => {
         var embed = new MessageEmbed()
             .addFields(
                 {name: 'CPU', value: `[Intel Core i5 7600K @ 3.80GHz](${cpu})`},

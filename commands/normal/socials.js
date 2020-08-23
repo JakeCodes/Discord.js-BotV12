@@ -9,6 +9,7 @@ const github = "https://github.com/JakeCodes"
 module.exports = {
     name: "socials",
     description: "returns socials",
+    aliases: [],
     run: (message, args) => {
         var embed = new MessageEmbed()
             .addFields(

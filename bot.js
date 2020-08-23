@@ -1,43 +1,18 @@
 require('dotenv').config();
 const { Collection, Client } = require("discord.js")
+const { registerCommands, registerEvents } = require('./utils/registry');
 
 // From Discord
 const client = new Client()
 client.commands = new Collection();
 client.events = new Collection();
 
-
 // Other
 const token = process.env.TOKEN
 const fs = require('fs')
 
-
-// Mod Commands
-const adminCMDFiles = fs.readdirSync("./commands/mod").filter(file => file.endsWith('.js'));
-adminCMDFiles.forEach(file => {
-    const adminCommand = require(`./commands/mod/${file}`);
-
-    client.commands.set(adminCommand.name, adminCommand)
-})
-
-
-// Normals Commands
-const normalCMDFiles = fs.readdirSync("./commands/normal").filter(file => file.endsWith('.js'));
-normalCMDFiles.forEach(file => {
-    const normalCommand = require(`./commands/normal/${file}`);
-
-    client.commands.set(normalCommand.name, normalCommand)
-})
-
-
-// Events
-const eventFiles = fs.readdirSync('./events').filter(file => file.endsWith('.js'));
-eventFiles.forEach(file => {
-    const events = require(`./events/${file}`);
-    const event = file.split('.')[0];
-	client.on(event, events.bind(null, client));
-})
-
+registerEvents(client, '../events');
+registerCommands(client, '../commands');
 
 // Login
 client.login(token)
