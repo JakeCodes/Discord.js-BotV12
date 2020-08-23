@@ -6,11 +6,11 @@ module.exports = {
     description: "Rolls Dice!",
     aliases: ["diceroll", "rolldice"],
     run: (message, args) => {
-        const random = randomInt(6) + 1
+        const random = randomInt(6)
 
         var embed = new MessageEmbed()
             .setTitle("Dice Roll")
-            .setDescription(random)
+            .setDescription(random + 1)
             .setColor(15158332)
 
         message.channel.send(embed)
