@@ -13,5 +13,11 @@ module.exports = (client, message) => {
     if (!cmd) return;
     
     console.log(cmd)
-    cmd.run(message, args)
+    
+    try {
+        cmd.run(client, message, args)
+    }
+    catch {
+        cmd.run(message, args)
+    }
 };
