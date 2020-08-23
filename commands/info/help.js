@@ -13,7 +13,7 @@ module.exports = {
                 .addFields(
                     {name: '`Jake Help Music`', value: `Music Commands`},
                     {name: '`Jake Help Games`', value: `Game Commands`},
-                    {name: '`Jake Help Misc`',    value: `Misc Commands`},
+                    {name: '`Jake Help Info`',    value: `Misc Commands`},
                 )
         }
 
@@ -43,20 +43,20 @@ module.exports = {
                 .setTitle("Game Commands")
 
                 .addFields(
-                    {name: '`Jake 8ball` (Question)', value: `Returns Yes, No, Maybe`},
-                    {name: '`Jake Roll` (No Arg)', value: `Returns a number between 1 & 6`},
-                    {name: '`Jake Random` (Any number of args)', value: `Returns a string from your args`},
+                    {name: '`Jake 8ball`', value: `Returns Yes, No, Maybe`},
+                    {name: '`Jake Roll`', value: `Returns a number between 1 & 6`},
+                    {name: '`Jake Random`', value: `Returns a string from your args`},
                 )
         }
 
-        else if (args[0] === "misc") {
+        else if (args[0] === "info") {
             var embed = new MessageEmbed()
                 .setTitle("Misc Commands")
 
                 .addFields(
-                    {name: '`Jake Rules` (No Arg)', value: `Returns List of Rules`},
-                    {name: '`Jake Socials` (No Arg)', value: `Returns My Socials`},
-                    {name: '`Jake Hardware` (No Arg)', value: `Returns My Hardware`},
+                    {name: '`Jake Rules`', value: `Returns List of Rules`},
+                    {name: '`Jake Socials`', value: `Returns My Socials`},
+                    {name: '`Jake Hardware`', value: `Returns My Hardware`},
                 )
         }
 
