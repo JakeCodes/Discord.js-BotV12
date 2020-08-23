@@ -6,7 +6,7 @@ module.exports = {
     aliases: ["diceroll", "rolldice"],
     run: (message, args) => {
         
-        if (!args[0] && !args[1]) return message.reply("You must have at least 2 args")
+        if (!args[0] || !args[1]) return message.reply("You must have at least 2 args")
         const ar = []
         args.forEach(arg => {
             ar.push(arg);
