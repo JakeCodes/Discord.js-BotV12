@@ -5,8 +5,6 @@ module.exports = {
     description: "help command",
     aliases: [],
     run: async (message, args) => {
-        
-        args[0] = args[0].toLowerCase()
         if (!args[0]) {
             var embed = new MessageEmbed()
                 .setTitle("Help")
