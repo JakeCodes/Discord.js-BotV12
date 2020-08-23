@@ -1,5 +1,5 @@
-function randomInt(list) {
-    return Math.floor(Math.random() * list.length)
+function randomInt(num) {
+    return Math.floor(Math.random() * num)
 }
 
 module.exports = {

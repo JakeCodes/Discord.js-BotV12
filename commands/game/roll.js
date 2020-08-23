@@ -6,7 +6,7 @@ module.exports = {
     description: "Rolls Dice!",
     aliases: ["diceroll", "rolldice"],
     run: (message, args) => {
-        const random = randomInt(args)
+        const random = randomInt(6) + 1
 
         var embed = new MessageEmbed()
             .setTitle("Dice Roll")

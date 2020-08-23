@@ -9,7 +9,7 @@ module.exports = {
     run: (message, args) => {
         if (!args[0] || !args[1]) return message.reply(`You must have at least 2 args ${emotes.error}`)
 
-        const random = randomInt(args)
+        const random = randomInt(args.length)
         const randomStr = args[random]
 
         var embed = new MessageEmbed()
