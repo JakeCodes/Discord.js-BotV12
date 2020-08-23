@@ -26,6 +26,7 @@ module.exports = {
                     {name: '`Jake Socials` (No Arg)',  value: `Returns My Socials`},
                     {name: '`Jake Hardware` (No Arg)', value: `Returns My Hardware`},
                     {name: '`Jake 8ball` (Question)',  value: `Returns Yes, No, Maybe`},
+                    {name: '`Jake Roll` (No Arg)', value: `Returns a number between 1 & 6`},
                     {name: '`Jake Rules` (No Arg)',    value: `Returns List of Rules`},
                     {name: '`Jake Join` (No Arg)',     value: `Joins VC`},
                     {name: '`Jake Leave` (No Arg)',    value: `Leaves VC`},
@@ -55,6 +56,7 @@ module.exports = {
                 .addFields(
                     {name: '`Jake 8ball` (Question)', value: `Returns Yes, No, Maybe`},
                     {name: '`Jake Roll` (No Arg)', value: `Returns a number between 1 & 6`},
+                    {name: '`Jake Random` (Any number of args)', value: `Returns a string from your args`},
                 )
         }
 
