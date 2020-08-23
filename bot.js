@@ -1,6 +1,7 @@
 require('dotenv').config();
 const { Collection, Client } = require("discord.js")
 const { registerCommands, registerEvents } = require('./utils/registry');
+const { Player } = require("discord-player")
 
 // From Discord
 const client = new Client()
@@ -8,7 +9,6 @@ client.commands = new Collection();
 client.events = new Collection();
 
 // Player
-const { Player } = require("discord-player")
 const player = new Player(client)
 client.player = player;
 
