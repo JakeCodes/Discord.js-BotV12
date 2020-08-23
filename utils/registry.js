@@ -26,7 +26,6 @@ async function registerCommands(client, dir) {
                         if(checkProperties(cmdName, cmdModule)) {
                             let { aliases } = cmdModule;
                             client.commands.set(cmdName, cmdModule);
-                            console.log(cmdName)
                             if(aliases.length !== 0)
                                 aliases.forEach(alias => client.commands.set(alias, cmdModule));
                             commandStatus.push(
