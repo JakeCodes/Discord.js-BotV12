@@ -1,5 +1,6 @@
 const { MessageEmbed } = require("discord.js")
 const emotes = require ("../../utils/emojis.json");
+const { randomInt } = require("../../utils/randomInt")
 
 module.exports = {
     name: "8ball",
@@ -49,7 +50,7 @@ module.exports = {
                          "Very doubtful."
                         ]
 
-        const random = Math.floor(Math.random() * answers.length);
+        const random = randomInt(args)
 
         var embed = new MessageEmbed()
             .setTitle("8Ball")
