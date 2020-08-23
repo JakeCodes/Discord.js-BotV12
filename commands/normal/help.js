@@ -4,36 +4,16 @@ module.exports = {
     name: "help",
     description: "help command",
     aliases: [],
-    run: async (message, args) => {
+    run: (message, args) => {
         if (!args[0]) {
             var embed = new MessageEmbed()
                 .setTitle("Help")
                 .setDescription("List of commands for me to follow")
 
                 .addFields(
-                    {name: '`Jake Help All`', value: `All Commands`},
                     {name: '`Jake Help Music`', value: `Music Commands`},
                     {name: '`Jake Help Games`', value: `Game Commands`},
                     {name: '`Jake Help Misc`',    value: `Misc Commands`},
-                )
-        }
-
-        else if (args[0] === "all") {
-            var embed = new MessageEmbed()
-                .setTitle("All Commands")
-
-                .addFields(
-                    {name: '`Jake Socials` (No Arg)',  value: `Returns My Socials`},
-                    {name: '`Jake Hardware` (No Arg)', value: `Returns My Hardware`},
-                    {name: '`Jake 8ball` (Question)',  value: `Returns Yes, No, Maybe`},
-                    {name: '`Jake Roll` (No Arg)', value: `Returns a number between 1 & 6`},
-                    {name: '`Jake Random` (2+ args)', value: `Returns a string from your args`},
-                    {name: '`Jake Rules` (No Arg)',    value: `Returns List of Rules`},
-                    {name: '`Jake Join` (No Arg)',     value: `Joins VC`},
-                    {name: '`Jake Leave` (No Arg)',    value: `Leaves VC`},
-                    {name: '`Jake Pause` (No Arg)',    value: `Pauses Video`},
-                    {name: '`Jake Resume` (No Arg)',   value: `Resumes Video`},
-                    {name: '`Jake Play` (YT Link)',    value: `Plays YT Link Audio`}
                 )
         }
 
@@ -42,11 +22,19 @@ module.exports = {
                 .setTitle("Music Commands")
 
                 .addFields(
-                    {name: '`Jake Join` (No Arg)',    value: `Joins VC`},
-                    {name: '`Jake Leave` (No Arg)',   value: `Leaves VC`},
-                    {name: '`Jake Pause` (No Arg)',   value: `Pauses Video`},
-                    {name: '`Jake Resume` (No Arg)',  value: `Resumes Video`},
-                    {name: '`Jake Play` (YT Link)',   value: `Plays YT Link Audio`}
+                    {name: '`Jake Join`',    value: `Joins VC`},
+                    {name: '`Jake Leave`',   value: `Leaves VC`},
+                    {name: '`Jake Play`',   value: `Plays audio`},
+                    {name: '`Jake Clear-Queue`',   value: `Clears Queue`},
+                    {name: '`Jake Filter`',   value: `Filter`},
+                    {name: '`Jake Loop`',   value: `Loops through the song`},
+                    {name: '`Jake Np`',   value: `Returns the song the is being played`},
+                    {name: '`Jake Pause`',   value: `Pauses song`},
+                    {name: '`Jake Resume`',   value: `Resumes song`},
+                    {name: '`Jake Shuffle`',   value: `Randomizes queue`},
+                    {name: '`Jake Skip`',   value: `Skips song`},
+                    {name: '`Jake Stop`',   value: `Stops song & queue`},
+                    {name: '`Jake Volume`',   value: `Changes Volume`},
                 )
         }
         
