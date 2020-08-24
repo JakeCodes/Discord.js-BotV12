@@ -1,5 +1,5 @@
-const emotes = require ("../../utils/emojis.json");
-const filters = require("../../utils/filters.json");
+const emotes = require ("../../config/emojis.json");
+const filters = require("../../config/filters.json");
 
 module.exports = {
     name: "filter",

@@ -1,5 +1,5 @@
 const { MessageEmbed } = require("discord.js")
-const emotes = require ("../../utils/emojis.json");
+const emotes = require ("../../config/emojis.json");
 const { randomInt } = require("../../utils/randomInt")
 
 module.exports = {
