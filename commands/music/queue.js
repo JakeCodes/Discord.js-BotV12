@@ -1,8 +1,8 @@
 const emotes = require ("../../config/emojis.json");
 
 module.exports = {
-    name: "play",
-    description: "plays song",
+    name: "queue",
+    description: "shows the queue",
     aliases: [],
     run: async (client, message, args) => {
 
