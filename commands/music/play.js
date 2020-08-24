@@ -49,7 +49,7 @@ module.exports = {
                     message.channel.send(`Now playing ${newTrack.name} ... ${emotes.music}`);
                 })
                 .on('channelEmpty', () => {
-                    message.channel.send(`Stop playing, there is no more member in the voice channel ${emotes.error}`);
+                    message.channel.send(`Stop playing, there are no more members in the voice channel ${emotes.error}`);
                 });
             }
     }
