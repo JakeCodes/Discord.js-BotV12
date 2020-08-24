@@ -19,5 +19,5 @@
     "start": "node bot.js"
   },
   "author": "JakeCodes",
-  "license": "ISC"
+  "license": ""
 }

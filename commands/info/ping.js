@@ -7,7 +7,7 @@ module.exports = {
     run: async (client, message, args) => {
 
         //Message
-        message.channel.send(`Ping : ${client.ws.ping} ms ${emotes.success}`)
+        message.channel.send(`Ping : \`${client.ws.ping}\` ms ${emotes.success}`)
 
     }
 }
