@@ -1,5 +1,4 @@
 const emotes = require ("../../utils/emojis.json");
-const Discord = require("discord.js")
 
 module.exports = {
     name: "skip",
