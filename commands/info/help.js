@@ -20,21 +20,21 @@ module.exports = {
         else if (args[0] === "music") {
             var embed = new MessageEmbed()
                 .setTitle("Music Commands")
-                .setDescription("`Play`, `Clear-Queue`,`Filter`, `Loop`,`Np`, `Pause`,`Resume`, `Shuffle`,`Skip`, `Stop`,`Volume`")
+                .setDescription("`Play`, `Clear-Queue`,`Filter`, `Loop`, `Np`, `Pause`, `Resume`, `Shuffle`, `Skip`, `Stop`, `Volume`")
                 .setFooter("Remember to have jake before each command")
         }
         
         else if (args[0] === "games" || args[0] === "game") {
             var embed = new MessageEmbed()
                 .setTitle("Game Commands")
-                .setDescription("`8ball`, `Roll`,`Random`")
+                .setDescription("`8ball`, `Roll`, `Random`")
                 .setFooter("Remember to have jake before each command")
         }
 
         else if (args[0] === "info") {
             var embed = new MessageEmbed()
                 .setTitle("Info Commands")
-                .setDescription("`Rules`, `Socials`,`Hardware`,`Ping`")
+                .setDescription("`Rules`, `Socials`, `Hardware`, `Ping`")
                 .setFooter("Remember to have jake before each command")
         }
 
