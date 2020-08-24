@@ -7,7 +7,7 @@ module.exports = {
     description: "random yes or no",
     aliases: ["8ball"],
     run: (message, args) => {
-        if (!args[0]) return message.reply(`Please define a question ${emotes.error}`)
+        if (!args[0]) return message.reply(`What will you be asking the 8ball? ${emotes.error}`)
 
         const answers = ["It is certain.",
 
