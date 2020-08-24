@@ -20,45 +20,22 @@ module.exports = {
         else if (args[0] === "music") {
             var embed = new MessageEmbed()
                 .setTitle("Music Commands")
-
-                .addFields(
-                    {name: '`Jake Join`',    value: `Joins VC`},
-                    {name: '`Jake Leave`',   value: `Leaves VC`},
-                    {name: '`Jake Play`',   value: `Plays audio`},
-                    {name: '`Jake Clear-Queue`',   value: `Clears Queue`},
-                    {name: '`Jake Filter`',   value: `Filter`},
-                    {name: '`Jake Loop`',   value: `Loops through the song`},
-                    {name: '`Jake Np`',   value: `Returns the song the is being played`},
-                    {name: '`Jake Pause`',   value: `Pauses song`},
-                    {name: '`Jake Resume`',   value: `Resumes song`},
-                    {name: '`Jake Shuffle`',   value: `Randomizes queue`},
-                    {name: '`Jake Skip`',   value: `Skips song`},
-                    {name: '`Jake Stop`',   value: `Stops song & queue`},
-                    {name: '`Jake Volume`',   value: `Changes Volume`},
-                )
+                .setDescription("`Play`, `Clear-Queue`,`Filter`, `Loop`,`Np`, `Pause`,`Resume`, `Shuffle`,`Skip`, `Stop`,`Volume`")
+                .setFooter("Remember to have jake before each command")
         }
         
         else if (args[0] === "games" || args[0] === "game") {
             var embed = new MessageEmbed()
                 .setTitle("Game Commands")
-
-                .addFields(
-                    {name: '`Jake 8ball`', value: `Returns Yes, No, Maybe`},
-                    {name: '`Jake Roll`', value: `Returns a number between 1 & 6`},
-                    {name: '`Jake Random`', value: `Returns a string from your args`},
-                )
+                .setDescription("`8ball`, `Roll`,`Random`")
+                .setFooter("Remember to have jake before each command")
         }
 
         else if (args[0] === "info") {
             var embed = new MessageEmbed()
                 .setTitle("Info Commands")
-
-                .addFields(
-                    {name: '`Jake Rules`', value: `Returns List of Rules`},
-                    {name: '`Jake Socials`', value: `Returns My Socials`},
-                    {name: '`Jake Hardware`', value: `Returns My Hardware`},
-                    {name: '`Jake Ping`', value: `Returns the bots ping`},
-                )
+                .setDescription("`Rules`, `Socials`,`Hardware`,`Ping`")
+                .setFooter("Remember to have jake before each command")
         }
 
         else return message.reply("Not defined")
