@@ -1,9 +1,9 @@
-const emotes = require ("../../config/emojis.json");
+const emotes = require("../../config/emojis.json");
 
 module.exports = {
     name: "now playing",
     description: "returns song that is currently playing!",
-    aliases: [],
+    aliases: ["nowplaying"],
     run: async (client, message, args) => {
 
         //If the member is not in a voice channel
