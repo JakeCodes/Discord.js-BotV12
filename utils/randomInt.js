@@ -1,4 +1,4 @@
-function randomInt(num) {
+const randomInt = num => {
     return Math.floor(Math.random() * num)
 }
 
