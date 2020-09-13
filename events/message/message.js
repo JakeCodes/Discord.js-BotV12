@@ -12,8 +12,6 @@ module.exports = (client, message) => {
   
     if (!cmd) return;
     
-    console.log(cmd)
-    
     try {
         cmd.run(client, message, args)
     }

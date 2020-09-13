@@ -2,9 +2,9 @@ const prefix = process.env.PREFIX.toLowerCase();
 const { update_membercount } = require("../../utils/update_membercount")
 
 module.exports = (client) => {
-    // set status and log when ready
     update_membercount(client)
 
+    // set status and log when ready
     client.user.setActivity( `${prefix}help`, {
         type: "LISTENING",
     });

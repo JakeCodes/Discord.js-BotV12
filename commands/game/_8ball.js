@@ -1,62 +1,58 @@
-const { MessageEmbed } = require("discord.js")
-const emotes = require ("../../config/emojis.json");
-const { randomInt } = require("../../utils/randomInt")
+const { MessageEmbed } = require("discord.js");
+const emotes = require("../../config/emojis.json");
+const { randomInt } = require("../../utils/randomInt");
 
 module.exports = {
-    name: "8ball",
-    description: "random yes or no",
-    aliases: ["8ball"],
-    run: (message, args) => {
-        if (!args[0]) return message.reply(`What will you be asking the 8ball? ${emotes.error}`)
+  name: "8ball",
+  description: "random yes or no",
+  aliases: ["8ball"],
+  run: (message, args) => {
+    if (!args[0])
+      return message.reply(
+        `What will you be asking the 8ball? ${emotes.error}`
+      );
 
-        const answers = ["It is certain.",
+    const answers = [
+      "It is certain.",
 
-                         "It is decidedly so.",
+      "Without a doubt.",
 
-                         "Without a doubt.",
+      "Yes - definitely.",
 
-                         "Yes - definitely.",
+      "You may rely on it.",
 
-                         "You may rely on it.",
+      "Outlook good.",
 
-                         "As I see it, yes.",
+      "Yes.",
 
-                         "Most likely.",
+      "Reply hazy, try again.",
 
-                         "Outlook good.",
+      "Ask again later.",
 
-                         "Yes.",
+      "Better not tell you now.",
 
-                         "Signs point to yes.",
+      "Cannot predict now.",
 
-                         "Reply hazy, try again.",
+      "Concentrate and ask again.",
 
-                         "Ask again later.",
+      "Don't count on it.",
 
-                         "Better not tell you now.",
+      "My reply is no.",
 
-                         "Cannot predict now.",
+      "My sources say no.",
 
-                         "Concentrate and ask again.",
+      "Outlook not so good.",
 
-                         "Don't count on it.",
+      "Very doubtful.",
+    ];
 
-                         "My reply is no.",
+    const random = randomInt(args.length);
 
-                         "My sources say no.",
+    var embed = new MessageEmbed()
+      .setTitle("8Ball")
+      .setDescription(`${answers[random]}`)
+      .setColor(15158332);
 
-                         "Outlook not so good.",
-
-                         "Very doubtful."
-                        ]
-
-        const random = randomInt(args.length)
-
-        var embed = new MessageEmbed()
-            .setTitle("8Ball")
-            .setDescription(`${answers[random]}`)      
-            .setColor(15158332)
-
-        message.channel.send(embed);
-    }
-}
+    message.channel.send(embed);
+  },
+};
