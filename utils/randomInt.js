@@ -1,7 +1,7 @@
-const randomInt = num => {
-    return Math.floor(Math.random() * num)
-}
+const randomInt = (num) => {
+  return Math.floor(Math.random() * Math.floor(num));
+};
 
 module.exports = {
-    randomInt
-}
+  randomInt,
+};

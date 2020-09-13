@@ -46,7 +46,7 @@ module.exports = {
       "Very doubtful.",
     ];
 
-    const random = randomInt(args.length);
+    const random = randomInt(answers.length);
 
     var embed = new MessageEmbed()
       .setTitle("8Ball")
